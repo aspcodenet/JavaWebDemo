@@ -18,6 +18,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         // Häömta saker från databas - tex en lista med HpockeyPlayers
+        // BLA  BLA
 
         model.addAttribute("players", hockeyPlayerRepository.findAll());
         model.addAttribute("user", "Stefan");
