@@ -10,6 +10,8 @@ public class HockeyPlayer {
     @Column(name="Id")
     private int id;
 
+    private int a;
+
     @Column(name="Name")
     private String name;
 

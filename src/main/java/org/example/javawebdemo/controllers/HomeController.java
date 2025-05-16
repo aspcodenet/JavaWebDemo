@@ -18,9 +18,11 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         // Häömta saker från databas - tex en lista med HpockeyPlayers
-
+        // bla
         model.addAttribute("players", hockeyPlayerRepository.findAll());
         model.addAttribute("user", "Stefan");
+        int i;
+        i = 99;
 
         return "home"; // namnet på HTML filen som ska visas
     }
